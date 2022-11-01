@@ -1,6 +1,6 @@
 # Programação Orientada a Objetos em Java para Jogos 
 
-![](https://github.com/josephpatrick1/java-game/blob/main/assets/game.gif?raw=true)
+<img src="https://github.com/josephpatrick1/java-game/blob/main/assets/game.gif?raw=true" style="width:512px;"/>
 
 Programação Orientada a Objetos (POO) é um paradigma de programação que utiliza a abstração para criar modelos de objetos que são capazes de representar problemas do mundo real. Com a POO, é possível modular o código e reutilizá-lo, além de permitir a criação de hierarquias de classes. 
 
