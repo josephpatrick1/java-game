@@ -10,9 +10,9 @@ A POO é muito útil para a criação de jogos, pois permite a modelagem de dive
 
 ## Criação do Game 
 
-Abaixo o modelo que mostra as classes do jogo criado utilizando POO. Nesse exemplo, foram utilizadas classes abstratas e interfaces. As classes abstratas são úteis para representar objetos genéricos, como personagens ou inimigos, enquanto as interfaces são úteis para definir o comportamento desses objetos. 
+Abaixo o modelo que mostra as classes do jogo criado utilizando POO. Nesse exemplo, foram utilizadas classes abstratas e interfaces. As classes abstratas são úteis para representar objetos genéricos, como personagens ou inimigos, enquanto as interfaces são úteis para definir o comportamento desses objetos.
 
-![](https://github.com/josephpatrick1/java-game/blob/main/assets/diagram.png?raw=true)
+<img src="https://github.com/josephpatrick1/java-game/blob/main/assets/diagram.png?raw=true" style="width:512px;"/>
 
 ## Para começar 
 
