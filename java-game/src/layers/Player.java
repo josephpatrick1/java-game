@@ -4,9 +4,10 @@ import engine.KeyHandler;
 import engine.KeysControl;
 import engine.LayerState;
 import game.Game;
+import interfaces.Move;
 import utils.Respawn;
 
-public class Player extends Layer {
+public class Player extends Layer implements Move {
     Respawn respawn;
     Game game;
     KeysControl keysControl;
@@ -76,7 +77,12 @@ public class Player extends Layer {
             setX(getX() + speed);
             return;
         }
-        super.move(direction, speed);
+        if (direction == "↑") {
+            setY(getY() - speed);
+        }
+        if (direction == "↓") {
+            setY(getY() + speed);
+        }
     }
     public void jumpLogic() {
         KeyHandler keyHandlerJump = new KeyHandler("↑", "down", () -> {

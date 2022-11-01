@@ -1,6 +1,8 @@
 package layers;
 
-public class MovePlatform extends Platform {
+import interfaces.Move;
+
+public class MovePlatform extends Platform implements Move {
     Player player;
     boolean moveToRight = true;
     int minX = getX();
@@ -18,6 +20,21 @@ public class MovePlatform extends Platform {
         this.move(moveToRight ? "→" : "←", 1);
         if (isTopColision()) {
             player.move(moveToRight ? "→" : "←", 1);
+        }
+    }
+
+    public void move(String direction, int speed) {
+        if (direction == "←") {
+            setX(getX() - speed);
+        }
+        if (direction == "→") {
+            setX(getX() + speed);
+        }
+        if (direction == "↑") {
+            setY(getY() - speed);
+        }
+        if (direction == "↓") {
+            setY(getY() + speed);
         }
     }
 

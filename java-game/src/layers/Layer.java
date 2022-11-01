@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import engine.LayerState;
 import engine.Sprite;
+import interfaces.PreRendered;
 
-public abstract class Layer {
+public abstract class Layer implements PreRendered {
     public abstract void preRender();
 
     private int x = 0;
@@ -71,21 +72,6 @@ public abstract class Layer {
 
     public void setCurrentStateId(String currentStateId) {
         this.currentStateId = currentStateId;
-    }
-
-    public void move(String direction, int speed) {
-        if (direction == "←") {
-            setX(getX() - speed);
-        }
-        if (direction == "→") {
-            setX(getX() + speed);
-        }
-        if (direction == "↑") {
-            setY(getY() - speed);
-        }
-        if (direction == "↓") {
-            setY(getY() + speed);
-        }
     }
 
     public Sprite getCurrentSprite(int timePassed) {
