@@ -26,7 +26,6 @@ public class Level1 extends Level {
                     layers.add(new MovePlatform(player, i, j, block, 10));
                 }
                 else if (block.contains("-1") == false) {
-                    //System.out.println("probaly bg");
                     layers.add(new Background(player, i, j, block));
                 }
             }

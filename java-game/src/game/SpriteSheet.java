@@ -50,6 +50,7 @@ public class SpriteSheet extends ImageTools {
         addDefaultSizeSprite("l9", image, 8, 1);
         addDefaultSizeSprite("t1", image, 1, 2);
 
+        // Background tiles assets
         int count = 0;
         for(int y = 0; y < 32; y++) {
             for(int x = 0; x < 32; x++) {
@@ -57,18 +58,9 @@ public class SpriteSheet extends ImageTools {
                 count++;
             }
         }
-
-        // Tree
-        addCustomSizeSprite("224", image, 16, 16, 5, 7);
-
-
     }
 
     private void addDefaultSizeSprite(String id, BufferedImage image, int x, int y) {
         this.sprites.add(new Sprite(image, id, x * defaultWidth, y * defaultHeight, defaultWidth, defaultHeight));
-    }
-
-    private void addCustomSizeSprite(String id, BufferedImage image, int x, int y, int multiplyWidth, int multiplyHeight) {
-        this.sprites.add(new Sprite(image, id, x * defaultWidth, y * defaultHeight, defaultWidth * multiplyWidth, defaultHeight * multiplyHeight));
     }
 }
